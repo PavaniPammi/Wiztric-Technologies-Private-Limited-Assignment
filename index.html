@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/87401dfaaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Wiztric Technologies Private Limited Assignment</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="navbar-container">
+        <div class="navbar-card-container-1">
+          <h1 class="navbar-icon">WASP</h1>
+          <hr class="hr-vertical" />
+          <h1 class="navbar-dashborad">Dashborad</h1>
+        </div>
+        <div class="navbar-card-container-2">
+          <div>
+            <a class="fa-sharp fa-solid fa-bell icon-1">
+              <span class="fa fa-comment"></span>
+              <span class="num">6</span>
+            </a>
+          </div>
+          <p class="date" id="date"></p>
+          <p class="time" id="time"></p>
+          <div class="navbar-logout-container">
+            <p style="margin-right: 0px">Logout</p>
+            <i class="fa-solid fa-arrow-right-from-bracket icon-2"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="main-card-container">
+        <div id="cardContainer" class="card-container"></div>
+        <div class="table-container">
+          <h1 class="table-heading">Inverters Data Table</h1>
+          <hr class="hr-horizontal" />
+          <div style="height: 400px; overflow: auto">
+            <table>
+              <thead>
+                <!--style="position: sticky; top: 0;"-->
+                <tr>
+                  <th>Inverter</th>
+                  <th>Voltage (kV)</th>
+                  <th>Current (Amp)</th>
+                  <th>Active Power (MW)</th>
+                  <th>Apperant Power (MVA)</th>
+                  <th>IGBT Temp (C)</th>
+                  <th>Inductor Temp (C)</th>
+                  <th>DC Input Power (W)</th>
+                  <th>Ambident Temp (C)</th>
+                  <th>DC Voltage (V)</th>
+                  <th>Life Time Energy (J)</th>
+                  <th>Eneegy Per Day (KW)</th>
+                  <th>Water Temp (C)</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
